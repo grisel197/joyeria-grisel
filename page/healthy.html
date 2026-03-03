@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link de bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <a href="../index.html"><img class="logo" src="../img/logo.jpg" alt="logo en forma de diamante"></a>
+        <!-- menu de navegacion -->
+        <nav>
+            <ul>
+                <!-- links -->
+                <li><a href="../index.html">Index</a></li>
+                <li><a href="#">Healthy</a></li>
+                <li><a href="./glow.html">Glow</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenedor2">
+
+            <h2>Colecciones de Joyería</h2>
+
+            <section class="subtitulos">
+
+                <div class="belleza">
+                    <h3>Anillos Elegantes</h3>
+                    <img src="../img/card-reloj.jpg" alt="anillos de joyería">
+                    <!-- lista ordenada -->
+                    <ol>
+                        <li>Anillos de oro</li>
+                        <li>Anillos de plata</li>
+                    </ol>
+                </div>
+
+                <div class="yoga">
+                    <h3>Collares Exclusivos</h3>
+                    <img src="../img/card-collar.jpg" alt="collares de joyería">
+                    <!-- lista desordenada -->
+                    <ul>
+                        <li>Diseños modernos</li>
+                        <li>Piedras naturales</li>
+                    </ul>
+                </div>
+
+                <div class="musica">
+                    <h3>Pulseras y Accesorios</h3>
+                    <img src="../img/card-pulsera.jpg" alt="modelos de anillos y collares">
+                    <p>Nuestras pulseras y accesorios están diseñados para resaltar tu estilo y elegancia. </p>
+                </div>
+
+            </section>
+
+        </section>
+
+        <h2>Edicion exclusica</h2>
+        <!-- cards bs -->
+        <div class="card-group container mt-2 mb-4">
+            <!-- 1 -->
+            <div class="card">
+                <img src="../img/card-reloj.jpg" class="card-img-top" alt="4 modelos de relojes">
+                <div class="card-body">
+                    <h3 class="card-title">Relojes Elegantes</h3>
+                    <p class="card-text">
+                        Descubre nuestra colección de relojes elaborados con acabados delicados y diseños atemporales.
+                        Perfectos para compromisos, aniversarios o para realzar tu estilo diario.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-body-secondary">Disponible todo el año</small>
+                    </p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="card">
+                <img src="../img/card-collar.jpg" class="card-img-top" alt="Collar delicado">
+                <div class="card-body">
+                    <h3 class="card-title">Collares Sofisticados</h3>
+                    <p class="card-text">
+                        Piezas únicas que combinan elegancia y delicadeza. Diseñadas para resaltar tu belleza
+                        y complementar cualquier ocasión especial.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-body-secondary">Edición exclusiva</small>
+                    </p>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="card">
+                <img src="../img/card-pulsera.jpg" class="card-img-top" alt="Pulsera fina">
+                <div class="card-body">
+                    <h3 class="card-title">Pulseras Exclusivas</h3>
+                    <p class="card-text">
+                        Diseños modernos y clásicos en perfecta armonía. Nuestras pulseras están pensadas
+                        para aportar un toque distinguido y elegante a cada momento.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-body-secondary">Nueva colección 2026</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Más modelos...</h3>
+        <!-- carrusel bs -->
+        <section id="carouselExampleFade" class="carousel slide carousel-fade w-50 m-auto mb-4">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/card-pulsera.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/card-collar.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/card-reloj.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Siguenos en redes</p>
+        <div class="redes">
+            <img class="ig" src="../img/instagram_logo.png" alt="logo instagram">
+            <img class="fb" src="../img/facebook.png" alt="logo facebook">
+        </div>
+    </footer>
+
+    <img class="wp" src="../img/wsp.png" alt="logo de whatsapp">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+
+</html>
