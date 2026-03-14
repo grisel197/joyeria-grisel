@@ -1,0 +1,30 @@
+//variables TIENE Q ESTAR DISPONIBLE para los otros parsahl
+
+$dorado: #DBCEA5;
+$cremita: #ECE7D1;
+$marron: #8A7650;
+$verde: #8E977D;
+
+//mixin sin parametros
+@mixin flex-sin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+//mixin con parametros
+@mixin flex-con($direc, $justi, $align) {
+    flex-direction: $direc;
+    justify-content: $justi;
+    align-items: $align;
+}
+
+ul{
+    @include flex-sin;
+}
+
+// section{
+//     @include flex-con( row , flex-start , space-around )
+// }
+

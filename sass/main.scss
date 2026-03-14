@@ -1,0 +1,13 @@
+//Comentario unicamente disponible en sass
+//Nesting o andidamiento
+
+
+ @use "./generales/general";
+ @use "./generales/header-footer";
+ @use "./pages/index";
+//mediaQ siempre al final
+ @use "./generales/media-querie";
+
+
+
+
