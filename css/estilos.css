@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+}
+
+header {
+  background-color: #8A7650;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header img {
+  width: 90px;
+}
+header nav {
+  width: 25%;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin-right: 8px;
+}
+header nav ul a {
+  color: #ECE7D1;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #8E977D;
+  text-align: center;
+  gap: 11px;
+}
+footer .ig {
+  width: 90px;
+  margin: 8px;
+}
+footer .fb {
+  width: 40px;
+  margin: 18px;
+}
+
+.wp {
+  width: 50px;
+  position: fixed;
+  right: 80px;
+  bottom: 100px;
+}
+
+main {
+  text-align: center;
+  background-color: #DBCEA5;
+  color: #8A7650;
+}
+main img {
+  width: 300px;
+}
+main .presentacion {
+  background-color: #ECE7D1;
+  font-size: 1.2rem;
+  display: flex;
+  /* el flex direction por defecto es row, pero igual lo pongo para q sepas */
+  flex-direction: row;
+  justify-content: space-around;
+  /* gap: 100px; */
+  align-items: center;
+}
+main .presentacion div {
+  width: 45%;
+  text-align: center;
+}
+main .presentacion div h1 {
+  text-align: center;
+  text-decoration: none;
+  color: #8A7650;
+  font-weight: 800;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+main .presentacion div h1:hover {
+  color: #625238;
+  transition: 2s;
+  transform: scale(1.2);
+}
+main .presentacion .img-presentacion {
+  width: 40%;
+  animation: swirl-in-fwd 0.6s ease-out both;
+}
+main .contenedor-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  /* generar la cuadricula(grilla) */
+  grid-template-areas: "titulo titulo titulo" "modelo texto1 texto1" "modelo anillos texto2" "modelo texto3 texto3" "modelo texto3 texto3";
+  /* cantidad y el tamaño de las columnas */
+  grid-template-columns: 20% 20% 30%;
+  /* caantidad y el tamaño de las filass  */
+  grid-template-rows: 50px 130px 160px 190px;
+  /* alinea la grilla completa */
+  justify-content: center;
+  /* alinea el contenido */
+  justify-items: center;
+  align-items: center;
+  column-gap: 10px;
+  background-color: #DBCEA5;
+}
+main .contenedor-grid .titulo-grid {
+  grid-area: titulo;
+  color: #8A7650;
+}
+main .contenedor-grid .modelo-grid {
+  grid-area: modelo;
+}
+main .contenedor-grid .parrafo-uno {
+  grid-area: texto1;
+}
+main .contenedor-grid .anillos-grid {
+  grid-area: anillos;
+}
+main .contenedor-grid .parrafo-dos {
+  grid-area: texto2;
+}
+main .contenedor-grid .parrafo-tres {
+  grid-area: texto3;
+}
+
+/* FLEX */
+.contenedor2 h2 {
+  color: #8A7650;
+  font-weight: 600;
+  font-size: 2.3rem;
+  /* padding: 4px; */
+  text-align: center;
+}
+.contenedor2 .subtitulos {
+  font-size: 1.2rem;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+}
+.contenedor2 .subtitulos .belleza,
+.contenedor2 .subtitulos .yoga,
+.contenedor2 .subtitulos .musica {
+  background-color: #ECE7D1;
+  width: 30%;
+  padding: 5px;
+  border: #8A7650 3px solid;
+  margin: 5px;
+  text-align: center;
+}
+.contenedor2 .subtitulos img {
+  width: 55%;
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    width: 80%;
+  }
+  header nav ul {
+    margin-right: 0;
+  }
+  main .presentacion {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .presentacion div {
+    width: 85%;
+  }
+  main .presentacion img {
+    width: 80%;
+  }
+  main .contenedor-grid {
+    grid-template-areas: "titulo" "texto1" "anillos" "texto2" "modelo";
+    grid-template-columns: 95%;
+    grid-template-rows: 100px 150px 190px 200px 480px;
+  }
+  main .contenedor-grid .parrafo-tres {
+    display: none;
+  }
+  .contenedor2 .subtitulos {
+    flex-direction: column;
+  }
+  .contenedor2 .subtitulos .belleza,
+  .contenedor2 .subtitulos .yoga,
+  .contenedor2 .subtitulos .musica {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

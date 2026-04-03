@@ -1,0 +1,62 @@
+
+//celulares
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        nav {
+            width: 80%;
+
+            ul {
+                margin-right: 0;
+            }
+
+        }
+    }
+
+    main {
+        .presentacion {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            div {
+                width: 85%;
+            }
+
+            .img-presentacion {
+                width: 80%;
+            }
+        }
+
+        .contenedor-grid {
+            grid-template-areas:
+                "titulo"
+                "texto1"
+                "anillos"
+                "texto2"
+                "modelo";
+            grid-template-columns: 95%;
+            grid-template-rows:
+                100px 150px 190px 200px 480px;
+
+            .parrafo-tres {
+                display: none;
+            }
+        }
+    }
+    .contenedor2 {
+        .subtitulos {
+            flex-direction: column;
+
+            .belleza,
+            .yoga,
+            .musica {
+                width: 80%
+            }
+        }
+    }
+}

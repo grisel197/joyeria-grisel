@@ -1,0 +1,61 @@
+@use "./variables" as*;
+
+//Nesting o anidamiento
+
+//HEADER
+header {
+    background-color: $marron;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    img {
+        width: 90px;
+    }
+
+    nav {
+        width: 25%;
+
+        ul {
+            list-style: none;
+            // display: flex;
+            // justify-content: space-around;
+            // align-items: center;
+            height: 100%;
+            margin-right: 8px;
+
+            a {
+                color: $cremita;
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+//FOOTER
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $verde;
+    text-align: center;
+    gap: 11px;
+    .ig {
+        width: 90px;
+        margin: 8px;
+    }
+    .fb {
+        width: 40px;
+        margin: 18px;
+    }
+}
+.wp {
+    width: 50px;
+    position: fixed;
+    right: 80px;
+    bottom: 100px;
+}

@@ -1,0 +1,109 @@
+@use "../generales/variables" as*;
+
+//Main index
+main {
+    text-align: center;
+    background-color: $dorado;
+    color: $marron;
+
+    img {
+        width: 300px;
+    }
+
+    .presentacion {
+        background-color: $cremita;
+        font-size: 1.2rem;
+        display: flex;
+        /* el flex direction por defecto es row, pero igual lo pongo para q sepas */
+        flex-direction: row;
+        justify-content: space-around;
+        /* gap: 100px; */
+        align-items: center;
+
+        div {
+            width: 45%;
+            text-align: center;
+
+            h1 {
+                text-align: center;
+                text-decoration: none;
+                color: $marron;
+                font-weight: 800;
+                font-size: 3rem;
+                text-transform: uppercase;
+            }
+
+            h1:hover {
+                color: #625238;
+                transition: 2s;
+                transform: scale(1.2);
+            }
+        }
+
+        .img-presentacion {
+            width: 40%;
+            animation: swirl-in-fwd 0.6s ease-out both;
+        }
+    }
+
+    .contenedor-grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        /* generar la cuadricula(grilla) */
+        grid-template-areas:
+            "titulo titulo titulo"
+            "modelo texto1 texto1"
+            "modelo anillos texto2"
+            "modelo texto3 texto3"
+            "modelo texto3 texto3";
+        /* cantidad y el tamaño de las columnas */
+        grid-template-columns: 20% 20% 30%;
+        /* caantidad y el tamaño de las filass  */
+        grid-template-rows: 50px 130px 160px 190px;
+        /* alinea la grilla completa */
+        justify-content: center;
+        /* alinea el contenido */
+        justify-items: center;
+        align-items: center;
+        column-gap: 10px;
+        background-color: $dorado;
+
+        .titulo-grid {
+            grid-area: titulo;
+            color: $marron;
+        }
+
+        .modelo-grid {
+            grid-area: modelo;
+        }
+
+        .parrafo-uno {
+            grid-area: texto1;
+        }
+
+        .anillos-grid {
+            grid-area: anillos;
+        }
+
+        .parrafo-dos {
+            grid-area: texto2;
+        }
+
+        .parrafo-tres {
+            grid-area: texto3;
+        }
+    }
+}
+
+@keyframes swirl-in-fwd {
+    0% {
+        transform: rotate(-540deg) scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0) scale(1);
+        opacity: 1;
+    }
+}
