@@ -10,6 +10,13 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
 header {
   background-color: #8A7650;
   display: flex;
@@ -26,9 +33,6 @@ header nav {
 }
 header nav ul {
   list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   height: 100%;
   margin-right: 8px;
 }
@@ -68,9 +72,6 @@ main {
   background-color: #DBCEA5;
   color: #8A7650;
 }
-main img {
-  width: 300px;
-}
 main .presentacion {
   background-color: #ECE7D1;
   font-size: 1.2rem;
@@ -100,7 +101,7 @@ main .presentacion div h1:hover {
 }
 main .presentacion .img-presentacion {
   width: 40%;
-  animation: swirl-in-fwd 0.6s ease-out both;
+  animation: swirl-in-fwd 3s ease-out both;
 }
 main .contenedor-grid {
   width: 100%;
@@ -126,12 +127,14 @@ main .contenedor-grid .titulo-grid {
 }
 main .contenedor-grid .modelo-grid {
   grid-area: modelo;
+  width: 300px;
 }
 main .contenedor-grid .parrafo-uno {
   grid-area: texto1;
 }
 main .contenedor-grid .anillos-grid {
   grid-area: anillos;
+  width: 300px;
 }
 main .contenedor-grid .parrafo-dos {
   grid-area: texto2;
@@ -140,6 +143,16 @@ main .contenedor-grid .parrafo-tres {
   grid-area: texto3;
 }
 
+@keyframes swirl-in-fwd {
+  0% {
+    transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
 /* FLEX */
 .contenedor2 h2 {
   color: #8A7650;
@@ -182,6 +195,7 @@ main .contenedor-grid .parrafo-tres {
     margin-right: 0;
   }
   main .presentacion {
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -189,7 +203,7 @@ main .contenedor-grid .parrafo-tres {
   main .presentacion div {
     width: 85%;
   }
-  main .presentacion img {
+  main .presentacion .img-presentacion {
     width: 80%;
   }
   main .contenedor-grid {

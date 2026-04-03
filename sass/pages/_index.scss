@@ -6,10 +6,6 @@ main {
     background-color: $dorado;
     color: $marron;
 
-    img {
-        width: 300px;
-    }
-
     .presentacion {
         background-color: $cremita;
         font-size: 1.2rem;
@@ -42,7 +38,7 @@ main {
 
         .img-presentacion {
             width: 40%;
-            animation: swirl-in-fwd 0.6s ease-out both;
+            animation: swirl-in-fwd 3s ease-out both;
         }
     }
 
@@ -76,6 +72,7 @@ main {
 
         .modelo-grid {
             grid-area: modelo;
+            width: 300px;
         }
 
         .parrafo-uno {
@@ -84,6 +81,7 @@ main {
 
         .anillos-grid {
             grid-area: anillos;
+            width: 300px;
         }
 
         .parrafo-dos {
@@ -107,3 +105,4 @@ main {
         opacity: 1;
     }
 }
+
